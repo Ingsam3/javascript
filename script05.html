@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>script05</title>
+		<script type="text/javascript">
+		
+			let msg ="짝수";
+			/*
+			let i =0;
+			if(msg == "짝수"){
+				i=2;
+			}else{
+				i=1;
+			}*/
+			
+			for(let i =1; i<=10; i+=2){
+					console.log(i);
+				
+			}
+			//삼항연산자가 if문보다 처리속도가 빠름
+			for(let i =(msg == "짝수") ? 2: 1; i <= 10; i+=2 ){
+				console.log(i);
+			}
+			/*
+			for(let i =1; i<=10; i+=2){
+				if(i%2 ===0){ //짝수 값만 출력
+					console.log(i);
+				}
+			}*/
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

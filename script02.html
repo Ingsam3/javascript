@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>javascript02</title>
+		<script type="text/javascript">
+			let name ="홍길동";
+			document.write("이름 : " + name + "<br>"); //현재 페이지에 출력
+			
+			let age = prompt("나이 입력 : ");
+			document.write(name + "님의 나이 : " + age + "<br>"); //입력 받아서 출력
+			document.write(`${name}  님의 나이 :   ${age}  <br>`);//backtip
+		
+			console.log(`age : ${typeof age}`);	//무조건 String 형식으로 출력 ->형변환 필요
+		
+			document.write(`만 나이 : ${age -1} 살 입니다`);
+			let num = Number(age);
+			
+			console.log(`num : ${typeof num}`); // 정수형 형변환
+			console.log(`num : ${typeof num.toString() }`); //문자형 형변환
+			console.log(`num : ${typeof (num + "" ) } `); 
+			
+			
+			/* 문제 발생 시점부터 이후 코드 실행 X
+			const n ="홍길동"; // 상수화 -> 형변환 하지 못하게
+			n = "lee"; 
+			comsole.log("n : " +n); //error
+			*/
+			
+			document.write("<h1 align ='center'>hellow</h1>"); //html코드 직접 입력
+			
+			
+			
+			</script>
+	</head>
+	<body>
+	
+	
+	</body>
+</html>

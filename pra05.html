@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>문제06</title>
+		<script type="text/javascript">
+			let cofPrice = 0;
+			let num = 0;
+			let totla = 0;
+			
+			let usbP = 5000;
+			dis10 = 0.1;
+			dis12 = 1.2;
+			let sum = 0;
+			num = prompt("커피 개수를 입력하시오 : ");
+			
+			if(num <= 10){
+				cofPrice =2000;
+				total = cofPrice *num;
+				document.write(`커피 가격은 : ${total}원 입니다`);
+			}else if(num >10){
+				cofPrice =1500;
+				total = cofPrice * (num-10) +20000;
+				document.write(`커피 가격은 : ${total}원 입니다`);
+			}
+			document.write(`<hr>`);
+			
+			num = prompt("USB 개수를 입력하시오 : ");
+			if(num>10 && num<100){
+				sum = (usbP*num)*dis10;
+				total = (usbP*num)-sum; 
+				document.write(`총 금액은 ${total}원 입니다.`);
+			}else if(num =>100){
+				sum = (usbP*num)*dis12;
+				total = (usbP*num)-sum; 
+				document.write(`총 금액은 ${total}원 입니다.`);
+			}
+			
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>문제04</title>
+		<script type="text/javascript">
+		 let num;
+		 num = prompt("수 입력 : ");
+
+		 
+		 if(num % 5 ===0){
+			 document.write(`입력 : ${num}, 결과 ${num}은 5의 배수입니다.`);
+		 }else{
+			 document.write(`${num}은 5의 배수가 아닙니다.`);
+		 }
+		 document.write(`<hr>`);
+		 
+		 if(num >0 && num<100){
+			 document.write(`정상`);
+		 }else{
+			 document.write(`비장상`);
+		 }
+		 document.write(`<hr>`);
+		 if(num % 2 === 0 && num % 3 === 0 ){
+			 document.write(`${num}`);
+		 }else{
+			 document.write(`짝수, 3의 배수 아님`);
+		 }
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

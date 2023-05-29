@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>문제01</title>
+		<script type="text/javascript">
+		//값에 대한 변경 없으면 const 사용 지향
+		let name = prompt("이름 입력 : ");
+		document.write("이름 : "+name+"<br>");
+		document.write(`이름 : ${name} <br>`);
+		
+		let age = prompt("나이 입력 : " );
+		let adrr = prompt("주소 입력 : " );
+		document.write("<hr>");
+	/*
+		document.write(' <table border="2"> ');
+		document.write('<tr> ');
+		document.write('<th>이름</th><th>나이</th> <th>주소</th>');
+		document.write('</tr> ');
+
+		document.write(' <tr>');
+		document.write(' <th>document.write("이름 : "+name+"<br>");</th> <th>document.write("나이 : "+age+"<br>");</th>  <th>document.write("주소 : "+adrr+"<br>"); </th>');
+		document.write(' </tr>');
+		document.write(' <tr>');
+		document.write(' <th>document.write(`이름 : ${name} <br>`);</th><th>document.write(`나이 : ${age} <br>`);</th> <th>document.write(`주소 : ${adrr} <br>`);</th>');
+		document.write('</tr> ');
+		
+		document.write(' </table> ');
+		*/
+		
+		 document.write('<table border="1">');
+		   document.write('<tr>');
+		   document.write('<th>이름</th> <th>나이</th> <th>주소</th>');
+		   document.write('</tr>');
+		   
+		   document.write('<tr>');
+		   document.write('<th>'+name+'</th><th>'+age+'</th><th>'+addr+'</th>');
+		   document.write('</tr>');
+		   
+		   document.write('<tr>');
+		   document.write(`<th>${name}</th><th>${age}</th><th>${addr}</th>`);
+		   document.write('</tr>');
+		   
+		   document.write('</table>');
+		   
+
+		const msg =`
+		      <table border="1">
+		         <tr><th>이름</th> <th>나이</th> <th>주소</th></tr>
+		         <tr><th>${name}</th> <th>${age}</th> <th>${addr}</th></tr>
+		      </table>
+		   `;
+		   document.write("<hr>");
+		   document.write( msg )
+
+		
+		</script>
+	</head>
+	<body>
+		
+			
+			
+				
+			
+		
+		</table>
+	
+	
+	</body>
+</html>
