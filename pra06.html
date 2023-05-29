@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>문제06</title>
 		<script type="text/javascript">
+		/*
 		let korea =0;
 		let math =0;
 		let eng =0;
@@ -50,19 +51,22 @@
 		}else if(num=0){
 			document.write("잘못입력");
 		}
-		
+		*/
 		document.write(`<hr>`);
 		
-		let time=0;
+		let time = 0;
 		time = prompt("시간을 입력하세요(분 단위)");
-		Price30 = 30000;
-		total =0;
-	
-		if(time<=30){
+		let Price30 = 30000;
+		let total = 0;
+		
+		
+		if(time <= 30){
 			total = Price30;
+			document.write(`전체 비용은 ${total}입니다. `);
 		}else if(time > 30){
-			let a = time/10;
-			total = Price30 + (a*5000);
+			let addPrice= parseInt((time/10)-3);  
+			console.log(addPrice);
+			total = Price30 +(addPrice*5000)
 			document.write(`전체 비용은 ${total}입니다. `);
 		}else{`다시 입력하세요`}
 		
